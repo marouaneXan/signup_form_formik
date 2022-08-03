@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css"
 import signup from './assets/signup.webp';
 import { Signup } from './components/Signup';
 

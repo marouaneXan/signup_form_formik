@@ -1,4 +1,23 @@
+@import url('https://foxnts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  }
+
+label {
+  font-size: .7rem;
+}
+
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
 }

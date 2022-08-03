@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { useField } from "formik";
 
-const TextField = () => {
+const TextField = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+  console.log(field, meta);
   return (
-    <div>TextField</div>
-  )
-}
+    <div className="mb-2">
+      <label htmlFor={field.name}>{label}</label>
+      <input className="form-control shadow-none" {...field} {...props} autoComplete="off" />
+    </div>
+  );
+};
 
-export default TextField
+export default TextField;

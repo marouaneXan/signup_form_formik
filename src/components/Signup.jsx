@@ -21,11 +21,13 @@ export const Signup = () => {
         Confirm_password:'',
     }} 
     validationSchema={validate}
+    onSubmit={values=>{
+        console.log(values)
+    }}
     >
       {formik => (
         <>
           <h1 className="my-4 font-weight-bold-display-4">Sign Up</h1>
-          {console.log(formik.values)}
           <Form>
             <TextField label="First Name" name="Fname" type="text"/>
             <TextField label="Last Name" name="Lname" type="text"/>
